@@ -15,11 +15,11 @@ public class Quiz {
     
     // FUNÇÃO PARA A INTRODUÇÃO
     static void intrucoes() {
-        System.out.println("______________________________________________________________________________________");
+        System.out.println("____________________________________________________________________________________");
         
         System.out.println("-E UM JOGO QUE POSSUE 10 PERGUNTAS DE MULTIPLA ESCOLHA, SO TENDO 1 CHANCE POR QUESTAO-");
-        System.out.println("                AO FINAL, SERA CONTADO O NUMERO DE ACERTOS QUE OBTEVE!              ");
-        System.out.println("______________________________________________________________________________________");
+        System.out.println("-               AO FINAL, SERA CONTADO O NUMERO DE ACERTOS QUE OBTEVE!             -");
+        System.out.println("_____________________________________________________________________________________");
     }
     
     // FUNÇÃO PARA OS CREDITOS
@@ -252,7 +252,7 @@ public class Quiz {
         int contador = 0;
         do {
             System.out.println("PERGUNTA 6:");
-            System.out.println("Quem sao os integrantes da equipe 7 ? ");
+            System.out.println(" Quem são os integrantes da equipe 7 ? ");
             System.out.println("a) Gaara, Kakuro e Temari ");
             System.out.println("b) Sasuke, Naruto e Sakura "); // Resposta Correta
             System.out.println("c) Neji, Rock Lee e Tentei ");
@@ -291,7 +291,7 @@ public class Quiz {
         int contador = 0;
         do {
             System.out.println("PERGUNTA 7:");
-            System.out.println("Quem recebeu o titulo de demonio da nevoa oculta ? ");
+            System.out.println(" Quem recebeu o título de demônio da nevoa oculta ? ");
             System.out.println("a) Kakashi Hatake ");
             System.out.println("b) Kisame Hoshigaki ");
             System.out.println("c) Itachi Uchiha ");
@@ -330,7 +330,7 @@ public class Quiz {
         int contador = 0;
         do {
             System.out.println("PERGUNTA 8:");
-            System.out.println("A Frase: *Aqueles que quebram as regras sao chamados de lixo, mas aqueles que abandonam os seus amigos sao piores que lixo.* E dita por qual personagem ? ");
+            System.out.println(" A Frase: *Aqueles que quebram as regras são chamados de lixo, mas aqueles que abandonam os seus amigos são piores que lixo.* É dita por qual personagem ? ");
             System.out.println("a) Obito Uchiha "); // Resposta Correta
             System.out.println("b) Naruto Uzumaki ");
             System.out.println("c) Kakashi Hatake ");
@@ -371,7 +371,7 @@ public class Quiz {
         int contador = 0;
         do {
             System.out.println("PERGUNTA 9:");
-            System.out.println("Quem foi o ninja que aniquilou o cla Uchiha ? ");
+            System.out.println(" Quem foi o ninja que aniquilou o clã Uchiha ? ");
             System.out.println("a) Hashirama Senju ");
             System.out.println("b) Sasuke Uchiha ");
             System.out.println("c) Madara Uchiha ");
@@ -410,7 +410,7 @@ public class Quiz {
         int contador = 0;
         do {
             System.out.println("PERGUNTA 10:");
-            System.out.println("Qual o maior sonho do Naruto Uzumaki ? ");
+            System.out.println(" Qual o maior sonho do Naruto Uzumaki ? ");
             System.out.println("a) Ser igual o Gabriel ");
             System.out.println("b) Lutar com o Sasuke ");
             System.out.println("c) Se tornar hokage "); // Resposta Correta
@@ -449,17 +449,22 @@ public class Quiz {
         String nome;
         System.out.println("Digite seu nome: ");
         nome = entrada.nextLine();
-  
-        
+        while (!nome.toLowerCase().equals("menu")) {
 
-        System.out.println("________________________________________");
+            System.out.println("Bem Vindo " + nome + "!");
+            System.out.println("Digite menu para acessar");
+            nome = entrada.nextLine();
+
+        }
+
+        System.out.println("_____________________________________");
         System.out.println("                                     ");
-        System.out.println("____SEJA BEM VINDO AO QUIZ DE NARUTO____");
-        System.out.println("________________________________________");
+        System.out.println("___SEJA BEM VINDO AO QUIZ NARUTO___");
+        System.out.println("_____________________________________");
         int opcao;
         do {
             System.out.println("(1) JOGAR");
-            System.out.println("(2) INSTRUCOES");
+            System.out.println("(2) INSTRUÇÕES");
             System.out.println("(3) CREDITOS");
             System.out.println("(4) SAIR");
 
@@ -480,7 +485,7 @@ public class Quiz {
                     sair();
                     break;
                 default:
-                    System.out.println("**Opçao invalida!**");
+                    System.out.println("**Opção inválida!**");
             }
         } while (opcao != 4);
     }
@@ -506,11 +511,11 @@ public class Quiz {
         System.out.println("\n");
         pergunta10();
         System.out.println("\n");
-        System.out.println("________________________________________________");
-        System.out.println("                                                ");
-        System.out.println(    "VOCE ACERTOU = " + acertos + " QUESTOES DE 10!");
-        System.out.println(         "FIM DO JOGO! Obrigado por jogar!");
-        System.out.println("_________________________________________________");
+        System.out.println("____________________________________________ ");
+        System.out.println("                                              ");
+        System.out.println("VOCE ACERTOU= " + acertos + " QUESTOES DE 10!");
+        System.out.println("FIM DO JOGO! Obrigado por jogar!");
+        System.out.println("_____________________________________________");
         pausa();
     }
 
